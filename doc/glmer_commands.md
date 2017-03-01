@@ -1,4 +1,5 @@
 ### Import the data into R.
+The data from which the model is created is imported into R.
 ```
 prb = read.table('new_prb_170103.txt',sep='\t',header=T,row.names=1,comment='')
 map = read.table('utilized_data_170103_mapping_file.txt',sep='\t',header=T,row.names=1,comment='')
@@ -9,7 +10,8 @@ prb_map$Treatment = as.factor(prb_map$Treatment)
 prb_map$NutrientLevel = as.factor(prb_map$NutrientLevel)
 prb_map$Replicate = as.factor(prb_map$Replicate)
 ```
-
+### Transform the data.
+The data is prepared for the model.
 ```
 prb.vec = c(as.matrix(prb_map[,1:3]))
 n.site = dim(prb_map[,1:3])[1]
@@ -25,6 +27,7 @@ print(summary(fit.glmm),correlation=FALSE) # display results
 confint(fit.glmm,method="Wald")
 ```
 ### Plot the result.
+The random effects of the model are plotted.
 ```
 require(sjPlot)
 sjp.lmer(fit.glmm,type='fe',vars=c('sppPseudomonas:predationpressure','sppMycobacterium:predationpressure','sppRickettsia:predationpressure','sppPseudomonas:nutrientlevel2','sppPseudomonas:nutrientlevel3','sppMycobacterium:nutrientlevel2','sppMycobacterium:nutrientlevel3','sppRickettsia:nutrientlevel2','sppRickettsia:nutrientlevel3'))

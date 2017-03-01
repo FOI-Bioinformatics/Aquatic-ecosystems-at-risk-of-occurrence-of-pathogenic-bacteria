@@ -20,6 +20,7 @@ X = data.frame(predationpressure=rep(scale(log(prb_map$PredationPressure+0.01)),
 ```
 
 ### Run the model.
+Version 1.1.12 of the lme4 package was utilized to create the model.
 ```
 require(lme4)
 fit.glmm<-glmer(prb.vec ~ 1 + spp + predationpressure:spp + nutrientlevel:spp + (0+spp|site)+(1|treatment/identifier)+(0+day|treatment),data=X,offset=nrreads,family=poisson())

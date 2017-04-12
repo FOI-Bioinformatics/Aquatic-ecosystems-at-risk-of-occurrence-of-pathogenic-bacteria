@@ -1,4 +1,4 @@
-# Aquatic ecosystems at risk for occurrence of pathogenic bacteria
+# Aquatic ecosystems at risk of occurrence of pathogenic bacteria
 
 ## Publication
 <i>Coming soon...</i>

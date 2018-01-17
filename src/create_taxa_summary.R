@@ -63,7 +63,7 @@ proportional_to_plot <- transform_sample_counts(proportional,function(x) 100 * x
 physeq <- psmelt(proportional_to_plot)
 mdf <- physeq[order(physeq[,ncol(physeq)]),]
 p <- ggplot(mdf, aes_string(x='Sample', y='Abundance', fill='Phylum'))
-p <- p + geom_bar(stat='identity', position='stack', color='black')
+p <- p + geom_bar(stat="identity", position=position_stack(reverse=TRUE), color="black")
 p <- p + theme_bw()
 p <- p + theme(axis.text.x=element_text(angle=-90, hjust=0))
 

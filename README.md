@@ -5,7 +5,7 @@
 
 ## create_line_chart.R
 Script to visualize the data of the experiment. Mean values with indicated stardard deviations are plotted in a line chart. 
-![Line chart](https://github.com/moahammarstrom/Aquatic-ecosystems-at-risk-for-occurrence-of-pathogenic-bacteria/blob/master/data/line_chart.png)
+![Line chart](https://github.com/FOI-Bioinformatics/Aquatic-ecosystems-at-risk-of-occurrence-of-pathogenic-bacteria/blob/master/doc/line_chart.png)
 
 #### Example
 ```
@@ -21,7 +21,7 @@ The following R packages are required to run the script:
 
 ## create_taxa_summary.R
 A script that creates a taxa summary form a OTU table in classic format, a mapping file and taxonomy file has to be given to the script as well. 
-![Taxa summary](https://github.com/moahammarstrom/Aquatic-ecosystems-at-risk-for-occurrence-of-pathogenic-bacteria/blob/master/data/taxa_summary.png)
+![Taxa summary](https://github.com/FOI-Bioinformatics/Aquatic-ecosystems-at-risk-of-occurrence-of-pathogenic-bacteria/blob/master/doc/taxa_summary.png)
 
 #### Example
 ```

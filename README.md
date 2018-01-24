@@ -1,4 +1,4 @@
-# Aquatic ecosystems at risk of occurrence of pathogenic bacteria
+# Predators and nutrient availability favor protozoa-resisting bacteria in aquatic systems
 
 ## Publication
 <i>Coming soon...</i>
